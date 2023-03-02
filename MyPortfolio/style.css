@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/*nav bar*/
+.logo {
+  width: 150px;
+  height: 45px;
+  position: sticky;
+  right: 1000%;
+  top: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  background-color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+.navbar ul li {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5 ease;
+}
+.navbar ul li a:hover {
+  background-color: #ffa31a;
+  color: black;
+  box-shadow: 0 0 10px #ffa31a;
+}
+/* home */
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  height: 439px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 55%;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(images/darkgray.png) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+}
+*.headings {
+  font-family: sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 70px 0px;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 650px;
+  background-color: #1b1b1b;
+  padding-bottom: 55%;
+}
+#pic {
+  display: flex;
+}
+#pic img {
+  width: 575px;
+  height: 400px;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+#about {
+  color: white;
+}
+#intro h2 {
+  font-size: 30px;
+  color: #ffa31a;
+  margin-bottom: 5px;
+}
+#intro h3 {
+  margin-bottom: 20px;
+}
+#intro h3 span {
+  color: #ffa31a;
+}
+/* OJT EXPERIENCE */
+#exp {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  color: white;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 20%;
+  position: sticky;
+}
+.gif {
+  display: flex;
+}
+.gif img {
+  width: 500px;
+  height: 300px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px;
+  position: sticky;
+}
+/* Gallery */
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  color: white;
+  align-items: center;
+  padding: 10px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding-bottom: 10%;
+}
+.gallery img {
+  width: 390px;
+  height: 250px;
+  margin: 12px;
+}
+/* contact */
+#Contact-Me {
+  background-color: #1b1b1b;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+.card {
+  display: flex;
+  max-width: 400px;
+  max-height: 400px;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10%;
+  background: #ffa31a;
+  box-shadow: 0 10px 9px #1b1b1b;
+}
+.card .body {
+  text-align: justify;
+  font-size: 5000px;
+  flex-direction: column;
+}
+.card .card-header .profile-img {
+  height: 200px;
+  width: 150px;
+  border-radius: 1000px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid #ffa31a;
+  box-shadow: 0 0 20px rgb(255, 251, 251);
+  border: 8px solid#292929;
+}
+.card .card-header .profile-img:hover {
+  height: 220px;
+  width: 170px;
+  border: 8px solid white;
+}
+
+.card .card-body pre {
+  margin-top: 110px;
+  margin-left: -12%;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-left: -100%;
+}
